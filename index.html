@@ -11,7 +11,7 @@
             padding: 0;
             list-style: none; /* Removes bullet points from lists */
             text-decoration: none; /* Removes underlines from links */
-            transition: 0.3s; /* Adds a transition effect to all properties */
+            transition: 0.15s; /* Adds a transition effect to all properties */
             -webkit-touch-callout: none; /* Disables callout, tooltip appearing when touching and holding a touch target */
             -webkit-user-select: none; /* Disables text selection on Safari */
             user-select: none; /* Disables text selection */
@@ -20,12 +20,13 @@
     #menu{display:flex;flex-direction:column;position: fixed;top:10px;right:10px;width:40px;height:40px;background-color:#F8F6FA;justify-content:center;border-radius:5px;align-items:center;border:2px solid green}
     #menu:active{transform:scale(0.5)}
     .line1, .line2, .line3{background-color:red;border-radius:10px;height:3px;width:25px;margin:2px}
-  .toggle{background-color: gold}
+  .toggle{background-color: yellow}
   .new{background-color: green;}
   .change{background-color: #333;color: white}
    button{color: red;border:2px solid green;border-radius:2px; background-color: orange}
    button:active{transform: scale(1.5)}
-body{background-color: white;color: black}
+   #demo{height:100%}
+body{background-color: white;color: black;text-align: justify; padding-left:2px; padding-right:2px}
   .me {left:0%}
   ul{font-size:20px;position: fixed; left:-100%; display:flex;flex-direction:column; width:100%; height:100vh; background-color: silver;justify-content: cente;align-items: cente}
   li{padding:10px}
@@ -36,20 +37,22 @@ body{background-color: white;color: black}
 
 <body id="toggle">
   <ul id="demo">
-    <h2 style="color: purple">MENU</h2>
+    <h2 style="color: purple; margin-top:28px">MENU</h2><hr>
     <li>HOME</li>
     <li>PAGES</li>
     <li>ABOUT</li>
-    <li>BACK</li>
+    <li>ORDER</li>
   </ul>
   <div id="menu" onclick="load()">
     <div class="line1"></div>
     <div id="pemo" class="line2"></div>
     <div class="line3"></div>
   </div>
-  <h1>Moon Landing</h1>
-  <p>One small step for man,one giant leap for mankind!.Niel Armstrong became the first man to land on the moon, shortly he was followed by buzz Aldrin.michael collins remain in the command module.They came in peace.being the first Time man was sent and safely returned from The moon</p>
-  <iframe style="background-color: #F8F6FA;align-items: center; justify-content: center;margin-left:6px" width="95%" height="100" src="sample.html"></iframe><br>
+  <h1 style="margin-top:0px;">MOON LANDING</h1><hr>
+  <p>"One small step for a man, one giant leap for mankind!".Niel Armstrong became the first man to land on the moon surface,   shortly he was followed by Buzz Aldrin.Michael Collins remain in the command module.He orbit and took photographs of the moon.They came in peace, being the first time man was sent and safely returned from the moon 🌒 surface.</p>
+  <hr><br>
+  <iframe style="background-color: white;align-items: center; justify-content: center;margin-left:6px; border-radius:12px" width="95%" height="150" src="sample.html"></iframe>
+    <br><br><hr>
   <script>
  function func(){
     document.getElementById("toggle").classList.toggle("change");}
@@ -62,11 +65,15 @@ body{background-color: white;color: black}
     }
     
   </script>
-  <button onclick="func()">Change Theme</button>
+  <button onclick="func()">Theme</button><br>
 <img src="https://picsum.photos/500/300" width="100%">
 <br>
-<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<h2>BIRTHDAY WISHES</h2><hr>
+<p class="text">
+  Hello, My name is Ododobari William Ogbuji born to Mr and Mrs Ogbuji.I am from Onne, Eleme, Rivers State, Nigeria, but reside in yeghe.I have two brothers.I am currently 18years old, and I would like to let you know that, this is my first website, athough simple, it is indeed a great and dream changing leap to success.To whomever is reading this, I really do appreciate.To God be the glory.<b>🌟HAPPY BIRTHDAY TO ME !!!🌟</b>.
 </p>
+<p style="margin-top:100px; margin-bottom:10px;text-align: center">2026 &copy Copyright</p>
+    
 </body>
 
 </html>
