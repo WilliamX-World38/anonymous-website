@@ -17,6 +17,8 @@
             user-select: none; /* Disables text selection */
             outline: none; /* Removes outline from elements */
         }
+ #canva{width:80px; height:60px ;position: fixed; bottom:5px;left:1px; margin:0px}
+ #canva:active{transform: scale(0.85)}
     #menu{display:flex;flex-direction:column;position: fixed;top:10px;right:10px;width:40px;height:40px;background-color:#F8F6FA;justify-content:center;border-radius:5px;align-items:center;border:2px solid green}
     #menu:active{transform:scale(0.5)}
     .line1, .line2, .line3{background-color:red;border-radius:10px;height:3px;width:25px;margin:2px}
@@ -34,6 +36,7 @@ body{background-color: white;color: black;text-align: justify; padding-left:2px;
 </head>
 
 <body id="toggle">
+<canvas id="canva" width="250px" height="200px"></canvas>
   <ul id="demo">
     <h2 style="color: purple; margin-top:28px">MENU</h2><hr>
     <li>HOME</li>
@@ -61,6 +64,22 @@ body{background-color: white;color: black;text-align: justify; padding-left:2px;
     function load(){
       document.getElementById("demo").classList.toggle("me");
     }
+<script>
+  const canvas = document.getElementById("canva");
+  const x = canvas.getContext("2d");
+  x.beginPath;
+  x.moveTo(100, 160)
+  x.lineTo(100, 100)
+  x.lineTo(80,100)
+  x.lineTo(140,40)
+  x.lineTo(200,100)
+  x.lineTo(180,100)
+  x.lineTo(180,160)
+  x.lineTo(95,160)
+  x.lineWidth = 10;
+  x.strokeStyle = "green"
+  x.stroke();
+</script>
     
   </script>
 <br>
